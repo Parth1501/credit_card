@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">credit_card</string>
+    <string name="card_number">Card number</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="security_code">Security code</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="submit_payment">SUBMIT PAYMENT</string>
+    <string name="valid_card_number">Please enter valid card number</string>
+    <string name="valid_date">Please enter valid date</string>
+    <string name="valid_security_code">Please enter valid security code</string>
+    <string name="valid_first_name">Please enter valid first name</string>
+    <string name="valid_last_name">Please enter valid last name</string>
+</resources>
