@@ -83,9 +83,10 @@ public class ValidateData {
         }
         int current_year=Integer.parseInt(String.valueOf(Calendar.getInstance().get(Calendar.YEAR)).substring(2,4));
         int current_month=Calendar.getInstance().get(Calendar.MONTH);
-        if(current_month>12)
+        if(exp_month>12)
             return false;
         if(exp_year==current_year) {
+
             return current_month <= exp_month;
         }
         else return exp_year >= current_year;
