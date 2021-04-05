@@ -11,4 +11,6 @@
     <string name="valid_security_code">Please enter valid security code</string>
     <string name="valid_first_name">Please enter valid first name</string>
     <string name="valid_last_name">Please enter valid last name</string>
+    <string name="okay">Okay</string>
+    <string name="payment_successful">Payment successful</string>
 </resources>

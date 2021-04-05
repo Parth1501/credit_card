@@ -1,8 +1,10 @@
 package com.example.credit_card.activity;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
     private void handelCase(int code) {
         switch (code) {
             case VALID:
+                handleAlertDialog();
                 break;
             case INVALID_CARD_NUMBER:
                 card_number.setError(getString(R.string.valid_card_number));
@@ -85,6 +88,19 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
         }
+    }
+
+    private void handleAlertDialog() {
+        AlertDialog.Builder dialog=new AlertDialog.Builder(MainActivity.this);
+        dialog.setPositiveButton(R.string.okay, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        }).setTitle(R.string.payment_successful);
+        AlertDialog alert=dialog.create();
+        alert.show();
+
     }
 
     private void initViews() {
